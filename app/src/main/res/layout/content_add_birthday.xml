@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.testchambr.birthdayapp.activities.AddBirthdayActivity"
+    tools:showIn="@layout/activity_add_birthday"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/nameTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textPersonName|textNoSuggestions|textCapSentences"
+            android:maxLines="1"
+            android:maxLength="255"
+            android:hint="@string/name_hint"
+            android:layout_toLeftOf="@+id/nameVoiceImageButton"
+            android:layout_toStartOf="@+id/nameVoiceImageButton"
+            android:layout_marginRight="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_below="@id/nameTitleTV"/>
+
+        <ImageButton
+            android:id="@+id/nameVoiceImageButton"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/nameTitleTV"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_voice"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/dateTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/nameEditText"
+            android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="date|textNoSuggestions"
+            android:maxLines="1"
+            android:maxLength="255"
+            android:hint="@string/date_hint"
+            android:layout_toLeftOf="@+id/datePickerImageButton"
+            android:layout_toStartOf="@+id/datePickerImageButton"
+            android:layout_marginRight="@dimen/margin_half"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:layout_below="@id/dateTitleTV"/>
+
+        <ImageButton
+            android:id="@+id/datePickerImageButton"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/dateTitleTV"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:layout_toLeftOf="@id/dateVoiceImageButton"
+            android:layout_toStartOf="@id/dateVoiceImageButton"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_date"
+            android:tint="@color/colorAccent"/>
+
+        <ImageButton
+            android:id="@+id/dateVoiceImageButton"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/dateTitleTV"
+            android:background="?selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:padding="2dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_voice"
+            android:tint="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/addToGoogleCalendarButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="@color/colorAccent"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/addToGoogleCalendarButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_to_google_calendar"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

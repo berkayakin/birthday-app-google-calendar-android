@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="birthdays">Doğum Günleri</string>
+    <string name="add_birthday">Doğum Günü Ekle</string>
+    <string name="add_to_google_calendar">Google Takvim\'e Ekle</string>
+    <string name="name">İsim</string>
+    <string name="date">Tarih</string>
+    <string name="birthday_of">%1$s, doğum günü</string>
+    <string name="date_hint">Örnek: 26 Nisan 1991</string>
+    <string name="name_hint">Örnek: Berkay AKIN</string>
+    <string name="fill_the_fields">Lütfen tüm alanları doldurun</string>
+    <string name="date_format_invalid">Girdiğiniz tarih formatı geçerli değil</string>
+    <string name="are_you_sure">Emin misiniz?</string>
+    <string name="are_you_sure_delete">Silmek istediğinizden emin misiniz?</string>
+    <string name="done">Bitti</string>
+    <string name="add_to_warning">Bu doğum günü etkinliği uygulama veritabanına kaydedilecek. Devam etmek istediğinizden emin misiniz?</string>
+    <string name="done_tap_to_go_back">Bitti, geri dönmek için dokunun</string>
+</resources>

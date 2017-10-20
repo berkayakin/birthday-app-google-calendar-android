@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">Birthday App</string>
+    <string name="birthdays">Birthdays</string>
+    <string name="add_birthday">Add Birthday</string>
+    <string name="add_to_google_calendar">Add to Google Calendar</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="birthday_of">Birthday of %1$s</string>
+    <string name="date_hint">Example: 29 April 1991</string>
+    <string name="name_hint">Example: Berkay AKIN</string>
+    <string name="fill_the_fields">Please fill the fields</string>
+    <string name="date_format_invalid">Given date format is invalid</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="are_you_sure_delete">Are you sure you want to delete?</string>
+    <string name="done">Done</string>
+    <string name="add_to_warning">This birthday event will be added to the application database. Are you sure you want to continue?</string>
+    <string name="done_tap_to_go_back">Done, tap to go back</string>
+</resources>
